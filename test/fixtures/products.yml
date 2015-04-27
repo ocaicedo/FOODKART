@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id            :integer          not null, primary key
+#  name          :string
+#  description   :string
+#  price         :decimal(, )
+#  category_id   :integer
+#  tax           :decimal(, )
+#  imgsource     :string
+#  restaurant_id :integer
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  price: 9.99
+  category_id: 1
+  tax: 9.99
+  imgsource: MyString
+  restaurant_id: 1
+
+two:
+  name: MyString
+  description: MyString
+  price: 9.99
+  category_id: 1
+  tax: 9.99
+  imgsource: MyString
+  restaurant_id: 1

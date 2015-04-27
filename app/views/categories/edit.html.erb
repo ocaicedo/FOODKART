@@ -1,0 +1,7 @@
+<h1>Editar Categoría</h1>
+ 
+<%= render 'form' %>
+ 
+<td> <%= link_to 'Atrás', categories_path, class:"btn btn-success btn-sm" %> <td>
+
+<td><%= link_to 'Eliminar', category_path, method: :delete, data: { confirm: 'Desea eliminar DEFINITIVAMENTE esta categoría?' } %></td>

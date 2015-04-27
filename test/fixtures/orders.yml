@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id          :integer          not null, primary key
+#  date        :datetime
+#  number      :integer
+#  total       :decimal(, )
+#  discount    :decimal(, )
+#  customer_id :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-04-21 15:38:42
+  number: 1
+  total: 9.99
+  discount: 9.99
+  customer_id: 1
+
+two:
+  date: 2015-04-21 15:38:42
+  number: 1
+  total: 9.99
+  discount: 9.99
+  customer_id: 1

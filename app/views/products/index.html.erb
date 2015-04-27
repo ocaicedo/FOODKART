@@ -1,0 +1,22 @@
+<h1>Productos</h1>
+  
+<table>
+  <tr>
+    
+    <th>Código</th>
+    <th>Producto</th>
+    <th>Precio</th>
+  </tr>
+ 
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id %></td>
+      <td><%= product.name %></td>
+      <td><%= product.price%></td>
+      <td><%= link_to 'Detalles', product_path(product) %></td>
+      <td><%= link_to 'Editar', edit_product_path(product) %></td>
+      <td><%= link_to('Borrar', product , { :method => :delete, "data-confirm" => "¿Desea borrar DEFINITIVAMENTE este producto?" }) %></td>
+    </tr>
+  <% end %>
+  <%= link_to 'Crear Nuevo  Producto', new_product_path %>
+</table>
