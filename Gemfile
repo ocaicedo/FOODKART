@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'annotate'
 gem 'table_print'
-gem 'devise'
+#gem 'devise'
 gem 'bootstrap-sass', '~> 3.2.0'
 
 # Use ActiveModel has_secure_password

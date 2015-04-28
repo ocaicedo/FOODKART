@@ -39,6 +39,7 @@ class CategoriesController < ApplicationController
   @category.destroy
    redirect_to categories_path
   end
+
   
   private
   def category_params

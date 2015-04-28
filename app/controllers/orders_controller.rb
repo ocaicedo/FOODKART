@@ -10,15 +10,17 @@ def index
 
 	def new
 		@order = Order.new
+    @products = Product.all
 	end
 
 	def edit
 		 @order = Order.find(params[:id])
+     @products = Product.all
 	end
 
 	def create
 		@order = Order.new(order_params)
-
+    
 
  		@order.save
 

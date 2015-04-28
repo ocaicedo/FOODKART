@@ -15,7 +15,7 @@
   </p>
  
  <p>
-    <%= f.label :Categoría %><br>
+    <%= f.label :Categoría %> <%= link_to 'Crear Categoría', new_category_path %> <br> 
     <%= f.collection_select(:category_id, Category.all, :id, :name)  %><br>
   </p>
  

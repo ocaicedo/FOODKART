@@ -1,0 +1,30 @@
+<%= form_for @order do |f| %>
+  <p>
+    <%= f.label :Cliente %><br>
+    <%= f.text_field :customer_id %>
+  </p>
+ 
+  
+ 
+  <p>
+      <%= f.label :Descuento%><br>
+      <%= f.text_field :discount %> <br>
+  </p>
+  
+  <li>
+      <% @products.each do |product| -%>
+       <p> <label><%= product.name %></label>
+        <%= check_box_tag 'product[price]', product.name%>
+        </p>
+        <% end %>
+      </li>
+
+  <p>
+      <%= f.label :Total  %><br>
+      <%= f.text_field :total %> <br>
+  </p>
+
+  <p>
+    <%= f.submit 'Guardar' %>
+  </p>
+<% end %>
