@@ -5,20 +5,15 @@
   </p>
  
   
+
+
  
   <p>
       <%= f.label :Descuento%><br>
       <%= f.text_field :discount %> <br>
   </p>
   
-  <li>
-      <% @products.each do |product| -%>
-       <p> <label><%= product.name %></label>
-        <%= check_box_tag 'product[price]', product.name%>
-        </p>
-        <% end %>
-      </li>
-
+  
   <p>
       <%= f.label :Total  %><br>
       <%= f.text_field :total %> <br>
@@ -28,3 +23,7 @@
     <%= f.submit 'Guardar' %>
   </p>
 <% end %>
+
+<% @products.each do |product| -%>
+  <button class="addField" data-product-id="<%=product.id%>"><%= product.name %></button> 
+  <%end%>
