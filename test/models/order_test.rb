@@ -4,7 +4,6 @@
 #
 #  id          :integer          not null, primary key
 #  date        :datetime
-#  number      :integer
 #  total       :decimal(, )
 #  discount    :decimal(, )
 #  customer_id :integer
